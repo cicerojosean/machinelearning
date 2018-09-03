@@ -19,7 +19,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 import os
-import tarfile
 from six.moves import urllib
 
 FILE_TO_DOWNLOAD =  "Social_Network_Ads.csv"
@@ -34,10 +33,6 @@ def fetch_data(data_url=DATA_URL, data_path=DATA_PATH, file_to_download=FILE_TO_
   
   
 fetch_data()
-
-# observando se o diretório datasets foi criado com sucesso 
-!ls dados
-
 # Importing the dataset
 dataset = pd.read_csv(DATA_PATH+FILE_TO_DOWNLOAD)
 
