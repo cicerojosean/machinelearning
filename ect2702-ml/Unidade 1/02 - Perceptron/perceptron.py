@@ -15,11 +15,15 @@ limiar = 0.5
 novas_entradas  = np.array([[1,1,1],[0,0,0],[1,0,0],[0,1,1]])  #valores para gerar a saída
 epocas = 100  #define o numero de épocas que serão utilizadas
 
+       
+
 def stepFunction(soma):
     if(soma>=0):            
         print("Saida depois da função de ativação: 1")
+        print("Classe 1")
         return 1
     print("Saida depois da função de ativação: -1")
+    print("Classe 0")
     return -1
 
 #   calcula a saida com pesos atuais (entrada * pesos)
