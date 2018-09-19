@@ -65,7 +65,7 @@ print("Melhores Parâmetros: \n",grid.best_params_) #visualiza os melhores parâ
 pred = grid.predict(X_test)  #compara o desempenho com o Y _test
 print('\n')
 print("Matriz de Confusão:\n",confusion_matrix(y_test, pred))
-print("Melhor Score: ",grid.best_score_)
+print("Melhor Score: ", round((grid.best_score_)*100,2),"%")
 
 
 
